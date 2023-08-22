@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Dosis:wght@300&family=Josefin+Sans:wght@300&family=Lunasima:wght@700&family=Montserrat&family=Open+Sans&family=Poppins:ital,wght@0,200;0,300;0,400;1,900&family=Raleway:wght@300&family=Roboto:ital@0;1&family=Satisfy&family=VT323&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+  border-bottom: 3px rgba(25, 0, 255, 0.24) double;
+  box-shadow: 0 0 20px 10px rgba(68, 68, 68, 0.6);
+  background: rgba(219, 219, 219, 0.534);
+}
+.header .header__logo {
+  width: 220px;
+  height: auto;
+  margin-left: 10vw;
+}
+.header .header__logo img {
+  width: 100%;
+}
+.header .header__nav ul {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10vw;
+}
+.header .header__nav ul li {
+  list-style-type: none;
+  border-right: 1px rgba(25, 0, 255, 0.24) solid;
+  padding: 1vw;
+  text-align: center;
+}
+.header .header__nav ul li a {
+  text-decoration: none;
+  color: rgb(82, 84, 190);
+  font-size: 1.2rem;
+  font-family: Poppins;
+}
+.header .header__nav--mobil ul {
+  display: flex;
+  flex-direction: column;
+}
+.header .header__nav--mobil ul li {
+  font-family: Poppins;
+  list-style-type: none;
+}
+.header .header__nav--mobil ul li a {
+  text-decoration: none;
+  color: rgb(82, 84, 190);
+}
+
+@media (max-width: 1400px) {
+  .header__nav {
+    display: none;
+  }
+  .header {
+    height: 200px;
+  }
+}
+@media (min-width: 1401px) {
+  .header__nav--mobil {
+    display: none;
+  }
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+}
+main .seccionPrincipal {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background-image: url(../assets/img/reunion-para-slider.jpg);
+  background-size: cover;
+  text-align: center;
+  box-shadow: 0 0 20px 10px rgba(68, 68, 68, 0.6);
+}
+main .seccionPrincipal .title {
+  font-family: Poppins;
+  background: rgba(219, 219, 219, 0.534);
+  display: inline-block;
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 12vh;
+  box-shadow: 0 0 20px 10px rgba(68, 68, 68, 0.6);
+}
+main .seccionPrincipal .title h1 {
+  font-size: 4rem;
+  color: rgb(82, 84, 190);
+}
+main .seccionPrincipal .title h2 {
+  font-size: 2.8rem;
+  color: rgb(187, 134, 69);
+}
+main .seccionPrincipal .title h3 {
+  font-size: 1.5rem;
+  line-height: 2.8;
+}
+main .seccionPrincipal .nosotros {
+  background: rgba(219, 219, 219, 0.534);
+  font-family: Poppins;
+  font-size: 1.2rem;
+  padding: 30px;
+  margin: 100px 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 10px rgba(68, 68, 68, 0.6);
+}
+main .cards {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+}
+main .cards .btn {
+  text-decoration: none;
+  color: black;
+  background-color: rgba(0, 110, 255, 0.349);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 0 20px;
+}
+main .cards .cards__one {
+  margin: 50px 10px;
+  height: 500px;
+  min-width: 300px;
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 10px rgba(68, 68, 68, 0.6);
+  background-image: url(../assets/img/charlando-3.jpg);
+  background-size: cover;
+  text-align: center;
+  font-family: poppins;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+main .cards .cards__one h4 {
+  font-size: 1.5rem;
+  background: rgba(219, 219, 219, 0.534);
+  border-radius: 20px;
+}
+main .cards .cards__one p {
+  background: rgba(219, 219, 219, 0.534);
+  padding: 10px;
+}
+main .cards .cards__two {
+  margin: 50px 10px;
+  height: 500px;
+  min-width: 300px;
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 10px rgba(68, 68, 68, 0.6);
+  background-image: url(../assets/img/meeting.png);
+  background-size: cover;
+  text-align: center;
+  font-family: poppins;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+main .cards .cards__two h4 {
+  font-size: 1.5rem;
+  background: rgba(219, 219, 219, 0.534);
+  border-radius: 20px;
+}
+main .cards .cards__two p {
+  background: rgba(219, 219, 219, 0.534);
+  padding: 10px;
+}
+main .cards .cards__three {
+  margin: 50px 10px;
+  height: 500px;
+  min-width: 300px;
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 10px rgba(68, 68, 68, 0.6);
+  background-image: url(../assets/img/reunion-1.jpg);
+  background-size: cover;
+  text-align: center;
+  font-family: poppins;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+main .cards .cards__three h4 {
+  font-size: 1.5rem;
+  background: rgba(219, 219, 219, 0.534);
+  border-radius: 20px;
+}
+main .cards .cards__three p {
+  background: rgba(219, 219, 219, 0.534);
+  padding: 10px;
+}
+main .cards .cards__four {
+  margin: 50px 10px;
+  height: 500px;
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 10px rgba(68, 68, 68, 0.6);
+  background-image: url(../assets/img/reunion-para-slider.jpg);
+  background-size: cover;
+  text-align: center;
+  font-family: poppins;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+main .cards .cards__four h4 {
+  font-size: 1.5rem;
+  background: rgba(219, 219, 219, 0.534);
+  border-radius: 20px;
+}
+main .cards .cards__four p {
+  background: rgba(219, 219, 219, 0.534);
+  padding: 10px;
+}
+
+.footer {
+  width: 100%;
+  height: 200px;
+  background: rgba(219, 219, 219, 0.534);
+  border-top: 3px rgba(25, 0, 255, 0.24) double;
+  box-shadow: 0 0 20px 10px rgba(68, 68, 68, 0.6);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Poppins;
+  text-align: center;
+}
+.footer .column1 {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.footer .column1 a {
+  text-decoration: none;
+  color: rgb(82, 84, 190);
+}
+.footer .column2 {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.footer .column2 a {
+  text-decoration: none;
+  color: rgb(82, 84, 190);
+}
+.footer .column3 {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+.footer .column3 img {
+  width: 2vw;
+  margin: 1vw;
+}
+
+.mainRecursos .title {
+  font-family: Poppins;
+  text-align: center;
+  margin: 50px 30px;
+  font-size: 4rem;
+  color: rgb(82, 84, 190);
+}
+.mainRecursos .recursosContenedor {
+  display: flex;
+  flex-wrap: wrap;
+}
+.mainRecursos .recursosContenedor p {
+  font-family: Poppins;
+  font-size: 1.2rem;
+  padding: 20px;
+  text-align: center;
+  background: rgba(219, 218, 218, 0.685);
+  margin: 40px 0;
+}
+
+.mainJuridico .title {
+  font-family: Poppins;
+  text-align: center;
+  margin: 50px 30px;
+  font-size: 4rem;
+  color: rgb(82, 84, 190);
+}
+.mainJuridico p {
+  font-family: Poppins;
+  font-size: 1.2rem;
+  padding: 20px;
+  text-align: center;
+  background: rgba(219, 218, 218, 0.685);
+  margin: 40px 0;
+  background-image: url(../../assets/img/charlando-3.jpg);
+  background-size: cover;
+  margin: 70px 30px;
+}
+
+.mainImpositivo .title {
+  font-family: Poppins;
+  text-align: center;
+  margin: 50px 30px;
+  font-size: 4rem;
+  color: rgb(82, 84, 190);
+}
+.mainImpositivo p {
+  font-family: Poppins;
+  font-size: 1.2rem;
+  padding: 20px;
+  text-align: center;
+  background: rgba(219, 218, 218, 0.685);
+  margin: 40px 0;
+  background-image: url(../../assets/img/meeting.png);
+  background-size: cover;
+  margin: 130px 30px;
+  padding: 10px 50px;
+}
+
+.mainContactanos .title {
+  font-family: Poppins;
+  text-align: center;
+  margin: 50px 30px;
+  font-size: 4rem;
+  color: rgb(82, 84, 190);
+}
+.mainContactanos p {
+  font-family: Poppins;
+  font-size: 1.2rem;
+  padding: 20px;
+  text-align: center;
+  background: rgba(219, 218, 218, 0.685);
+  margin: 40px 0;
+  background-image: url(../../assets/img/meeting.png);
+  background-size: cover;
+  margin: 130px 30px;
+  padding: 10px 50px;
+}
+
+/*# sourceMappingURL=style.css.map */
